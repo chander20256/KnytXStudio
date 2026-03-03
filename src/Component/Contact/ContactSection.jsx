@@ -11,7 +11,7 @@ export default function ContactSection() {
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-black dark:text-white">
-            Contact Knyt<span className="text-yellow-400">X</span>Studio
+            Contact Knyt<span className="text-green-400">X</span>Studio
           </h1>
 
           <p className="mt-4 text-gray-600 dark:text-gray-400">
@@ -27,7 +27,7 @@ export default function ContactSection() {
           <form className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 sm:p-8 shadow-sm">
 
             <h2 className="text-xl font-semibold text-black dark:text-white">
-              Send us a <span className="text-yellow-400">message</span> 
+              Send us a message 
             </h2>
 
             <div className="mt-6 space-y-5">
@@ -88,6 +88,7 @@ export default function ContactSection() {
   <span>Send Message</span>
   <span className="liquid" />
 </button>
+
 
             </div>
           </form>

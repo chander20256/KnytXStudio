@@ -43,7 +43,7 @@ export default function WhyChoose() {
             id="why-us-heading"
             className="text-3xl sm:text-4xl font-extrabold text-black dark:text-white"
           >
-            Why Choose KnytXStudio
+            Why Choose Knyt<span className="text-green-400">X</span>Studio
           </h2>
 
           <p className="mt-4 text-gray-600 dark:text-gray-400">

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import logoLight from "../../assets/KnytXStudio_logo_original.svg";
-import logoDark from "../../assets/KnytXStudio_logo_white_on_black.svg";
+import logoLight from "../../assets/logo_light.svg";
+import logoDark from "../../assets/logo_dark.svg";
 
 import {
   FaFacebookF,
@@ -41,7 +41,7 @@ export default function Footer() {
               />
 
               <span className="text-xl font-bold text-black dark:text-white">
-                Knyt<span className="text-yellow-400">X</span>Studio
+                Knyt<span className="text-green-400">X</span>Studio
               </span>
             </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-2">
-              {["Home", "About", "Portfolio", "Contact"].map(item => (
+              {["Home", "About", "Portfolio","Blog", "Contact" ].map(item => (
                 <li key={item}>
                   <Link
                     to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -152,3 +152,4 @@ export default function Footer() {
     </footer>
   );
 }
+

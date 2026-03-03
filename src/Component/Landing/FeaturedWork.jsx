@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function FeaturedWork() {
   const projects = [
@@ -37,12 +38,12 @@ export default function FeaturedWork() {
           </div>
 
           {/* CTA BUTTON */}
-          <a
-            href="/portfolio"
+          <Link
+           to="/portfolio"
             className="inline-flex items-center gap-2 font-semibold text-black dark:text-white hover:gap-3 transition-all"
           >
-            View All Projects <FaArrowRight />
-          </a>
+            View All <span className="text-green-400">Projects</span><FaArrowRight className="text-green-400"/>
+          </Link>
 
         </div>
 
@@ -71,9 +72,12 @@ export default function FeaturedWork() {
                 </p>
 
                 {/* SUBTLE LINK */}
-                <div className="mt-4 font-medium text-black dark:text-white opacity-80 group-hover:opacity-100 transition">
-                  View Details →
-                </div>
+                <Link
+  to="/portfolio"
+  className="mt-4 inline-block font-medium text-black dark:text-white opacity-80 group-hover:opacity-100 transition"
+>
+  View Details →
+</Link>
 
               </div>
             </div>

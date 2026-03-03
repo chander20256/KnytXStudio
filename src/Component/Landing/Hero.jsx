@@ -20,12 +20,12 @@ export default function Hero() {
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
 <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold tracking-tight text-black dark:text-white">
-  Knyt<span className="text-yellow-400">X</span>Studio
+  Knyt<span className="text-green-400">X</span>Studio
 </h1>
 
             <p className="mt-6 text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-200">
               Where Ideas Become{" "}
-              <span className="text-yellow-400 font-extrabold">
+              <span className=" font-extrabold">
                 Powerful Products
               </span>
             </p>
@@ -44,20 +44,24 @@ export default function Hero() {
             <div className="mt-8 flex flex-row gap-4 justify-center lg:justify-start">
 
               <button
-                onClick={handleClick}
-                className={`liquid-btn ${active ? "active" : ""}`}
-              >
-                <span>Get Started</span>
-                <span className="liquid" />
-              </button>
+  onClick={handleClick}
+  className={`premium-green-btn ${active ? "active" : ""}`}
+>
+  <span>Get Started</span>
+  <span className="liquid" />
+</button>
 
- <button
-                onClick={handleClick}
-                className={`liquid-btn ${active ? "active" : ""}`}
-              >
-                <span>View Portfolio</span>
-                <span className="liquid" />
-              </button>
+<button
+  onClick={handleClick}
+  className="px-6 py-3 rounded-xl font-semibold border 
+             border-black text-black 
+             dark:border-white dark:text-white
+             transition-all duration-300
+             hover:bg-black hover:text-white
+             dark:hover:bg-white dark:hover:text-black"
+>
+  View Portfolio
+</button>
 
             </div>
 

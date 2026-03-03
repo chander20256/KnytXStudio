@@ -13,33 +13,33 @@ export default function Process() {
   const steps = [
     {
   icon: (
-    <FaSearch className="text-[#FFC107] dark:text-[#FFD54F]" />
+    <FaSearch className="text-green-400 dark:text-green-400" />
   ),
   title: "Discovery",
   desc: "We analyze your goals, target audience, and requirements to define the right product strategy.",
 },
     {
-      icon: <FaPencilRuler className="text-[#FFC107] dark:text-[#FFD54F]" />,
+      icon: <FaPencilRuler className="text-green-400 dark:text-green-400" />,
       title: "Design",
       desc: "Wireframes and visual designs crafted for usability, clarity, and strong user experience.",
     },
     {
-      icon: <FaCode className="text-[#FFC107] dark:text-[#FFD54F]"/>,
+      icon: <FaCode className="text-green-400 dark:text-green-400"/>,
       title: "Development",
       desc: "Robust implementation using modern technologies for performance, security, and scalability.",
     },
     {
-      icon: <FaVial className="text-[#FFC107] dark:text-[#FFD54F]" />,
+      icon: <FaVial className="text-green-400 dark:text-green-400" />,
       title: "Testing & Quality Assurance",
       desc: "Comprehensive testing ensures reliability, performance, and a bug-free user experience.",
     },
     {
-      icon: <FaBullhorn className="text-[#FFC107] dark:text-[#FFD54F]" />,
+      icon: <FaBullhorn className="text-green-400 dark:text-green-400" />,
       title: "Digital Marketing",
       desc: "SEO, performance optimization, and marketing strategies to help your product reach the right audience.",
     },
     {
-      icon: <FaRocket className="text-[#FFC107] dark:text-[#FFD54F]"  />,
+      icon: <FaRocket className="text-green-400 dark:text-green-400"  />,
       title: "Launch & Support",
       desc: "Deployment, monitoring, and ongoing support to ensure long-term success.",
     },

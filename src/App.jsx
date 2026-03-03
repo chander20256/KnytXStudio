@@ -3,15 +3,26 @@ import MainLayout from "./layout/Mainlayout";
 
 import Landing from "./Pages/Landing";
 import Contact from "./Pages/Contact";
+import Blog from "./Pages/Blog/Blog";
+import Services from "./Pages/Services";
+import Portfolio from "./Pages/Portfolio";
+import About from "./Pages/About";
+import BlogDetail from "./Pages/Blog/BlogDetail";
 
 function App() {
   return (
-    <MainLayout>
-      <Routes>
+    <Routes>
+      <Route element={<MainLayout />}>
         <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </MainLayout>
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Route>
+    </Routes>
   );
 }
 

@@ -1,3 +1,5 @@
+
+
 import {
   FaLaptopCode,
   FaMobileAlt,
@@ -65,15 +67,15 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="group bg-white dark:bg-neutral-900 border border-gray-200 dark:border-white/10 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-black/20 dark:hover:border-white/20"
+              className="group bg-white dark:bg-neutral-900 border border-gray-200 dark:border-white/10 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/10 hover:border-green-400/40"
             >
               {/* ICON */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-white/10 text-xl text-black dark:text-white transition-transform duration-300 group-hover:scale-110">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-green-400/10 text-xl text-green-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-green-400/20">
                 {service.icon}
               </div>
 
               {/* TITLE */}
-              <h3 className="mt-5 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mt-5 text-xl font-semibold text-black dark:text-white transition-colors duration-300 group-hover:text-green-400">
                 {service.title}
               </h3>
 
