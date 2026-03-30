@@ -119,3 +119,7 @@
 .premium-green-btn:hover {
   color: #22c55e;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import heroImage from "../../assets/KnytXStudio_logo_original.svg"; 
 export default function Hero() {
@@ -51,17 +51,19 @@ export default function Hero() {
   <span className="liquid" />
 </button>
 
-<button
-  onClick={handleClick}
-  className="px-6 py-3 rounded-xl font-semibold border 
-             border-black text-black 
+
+
+<Link
+  to="/portfolio"
+  className="px-6 py-3 rounded-xl font-semibold border
+             border-black text-black
              dark:border-white dark:text-white
              transition-all duration-300
              hover:bg-black hover:text-white
              dark:hover:bg-white dark:hover:text-black"
 >
   View Portfolio
-</button>
+</Link>
 
             </div>
 

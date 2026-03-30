@@ -33,7 +33,7 @@ export default defineType({
       type: 'text',
       rows: 3,
       description: 'Short preview text shown in blog listing',
-      validation: Rule => Rule.max(200),
+      validation: Rule => Rule.max(300),
     }),
 
     // DESCRIPTION (Used for SEO Meta)
