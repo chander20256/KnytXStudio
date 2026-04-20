@@ -6,8 +6,9 @@ import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog/Blog";
 import Services from "./Pages/Services";
 import Portfolio from "./Pages/Portfolio";
-import About from "./Pages/About";
+
 import BlogDetail from "./Pages/Blog/BlogDetail";
+import About from "./Pages/About";
 
 function App() {
   return (
