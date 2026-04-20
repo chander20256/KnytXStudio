@@ -5,38 +5,25 @@ import Letter from "./Letters";
 export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControlledOpen }) {
     const [internalOpen, setInternalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-  // decide which state to use
   const isOpen = controlledOpen !== undefined ? controlledOpen : internalOpen;
   const setIsOpen = setControlledOpen || setInternalOpen;
 
   return (
     <div className="flex flex-col items-center justify-center md:min-h-screen dark:bg-black transition-colors px-4 sm:px-6 mt-20 md:mt-0">
-      
-      {/* Envelope Container - Perfect for all screens */}
       <div 
         className="relative w-full max-w-[300px] xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl aspect-[3/2] cursor-pointer group perspective-1000"
         onClick={(e) => {
-  e.stopPropagation(); // 🔥 STOP bubbling
-  if (!isOpen) setIsOpen(true); // only open, don't toggle
+  e.stopPropagation(); 
+  if (!isOpen) setIsOpen(true);
 }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        
-        {/* Main Envelope Body */}
         <div className="relative w-full h-full">
-          
-          {/* Envelope Base (Back part) */}
           <div className="absolute inset-0 bg-gray-200 dark:bg-gray-800 rounded-lg shadow-xl">
-            {/* Envelope Bottom Shadow */}
             <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/10 to-transparent rounded-b-lg" />
           </div>
-
-          {/* Envelope Front (Main body) */}
           <div className="absolute inset-0 bg-white dark:bg-black border-2 border-gray-300 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden">
-            
-            {/* Decorative diagonal lines */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute top-0 left-0 w-full h-full bg-repeat" 
                    style={{ 
@@ -44,8 +31,6 @@ export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControl
                    }} 
               />
             </div>
-
-            {/* Envelope Flap - Opens from top */}
             <div 
               className={`absolute top-0 left-0 w-full origin-top transition-transform duration-700 ease-in-out z-20`}
               style={{
@@ -53,19 +38,14 @@ export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControl
                 transform: isOpen ? 'rotateX(180deg)' : 'rotateX(0deg)',
               }}
             >
-              {/* Flap Front */}
               <div 
                 className="relative w-full h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 bg-gray-50 dark:bg-white/5 border-b-2 border-gray-200 dark:border-gray-700 rounded-t-lg"
                 style={{ backfaceVisibility: 'hidden' }}
               >
-                {/* Flap gradient */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-100/50 dark:to-white/5" />
-                
-                {/* Green accent line */}
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-400" />
               </div>
               
-              {/* Flap Inside */}
               <div 
                 className="absolute top-0 left-0 w-full h-12 xs:h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 bg-gray-100 dark:bg-gray-800 rounded-t-lg border-b-2 border-gray-200 dark:border-gray-700"
                 style={{ 
@@ -73,31 +53,21 @@ export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControl
                   transform: 'rotateX(180deg)',
                 }}
               >
-                {/* Inside pattern */}
                 <div className="absolute inset-1 xs:inset-2 sm:inset-3 md:inset-4 border border-dashed border-gray-300 dark:border-gray-600 rounded" />
                 <div className="absolute top-2 xs:top-3 sm:top-4 md:top-6 left-2 xs:left-3 sm:left-4 md:left-6 w-1.5 xs:w-2 sm:w-3 md:w-4 h-1.5 xs:h-2 sm:h-3 md:h-4 bg-green-400/20 rounded-full" />
                 <div className="absolute bottom-2 xs:bottom-3 sm:bottom-4 md:bottom-6 right-2 xs:right-3 sm:right-4 md:right-6 w-3 xs:w-4 sm:w-6 md:w-8 h-3 xs:h-4 sm:h-6 md:h-8 bg-gradient-to-br from-green-400/10 to-green-400/30 rounded" />
               </div>
             </div>
-
-            {/* Envelope Bottom Part - VISIBLE WHEN CLOSED */}
             <div className="absolute bottom-0 left-0 right-0 h-2/3 bg-gray-50 dark:bg-black">
-              
-              {/* CLOSED ENVELOPE CONTENT */}
               <div className={`absolute inset-0 flex flex-col items-center justify-center p-3 xs:p-4 sm:p-5 md:p-6 transition-opacity duration-500 ${
                 isOpen ? 'opacity-0' : 'opacity-100'
               }`}>
-                
-                {/* Header with Logo and Mind Lines */}
                 <div className="w-full flex flex-col items-center mb-2 xs:mb-3 sm:mb-4">
-                  {/* Logo centered */}
                   <div className="flex-shrink-0">
                     <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-5xl font-extrabold text-black dark:text-white whitespace-nowrap">
                       Knyt<span className="text-green-400">X</span>Studio
                     </h2>
                   </div>
-                  
-                  {/* Mind lines below logo */}
                   <div className="flex items-center gap-1 xs:gap-1.5 sm:gap-2 mt-1 xs:mt-1.5 sm:mt-2">
                     <div className="w-3 xs:w-4 sm:w-6 md:w-8 h-0.5 bg-green-400/30 rounded-full"></div>
                     <div className="w-4 xs:w-5 sm:w-7 md:w-9 lg:w-10 h-0.5 bg-green-400/50 rounded-full"></div>
@@ -105,15 +75,11 @@ export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControl
                     <span className="text-green-400 text-[10px] xs:text-xs sm:text-sm ml-0.5 xs:ml-1">✦</span>
                   </div>
                 </div>
-
-                {/* Decorative divider */}
                 <div className="w-full flex items-center gap-1 xs:gap-1.5 sm:gap-2 mb-2 xs:mb-3 sm:mb-4 md:mb-5">
                   <div className="h-px flex-1 bg-gradient-to-r from-transparent via-green-400/30 to-transparent"></div>
                   <FaEnvelope className="text-green-400/50 text-[10px] xs:text-xs sm:text-sm" />
                   <div className="h-px flex-1 bg-gradient-to-r from-transparent via-green-400/30 to-transparent"></div>
                 </div>
-
-                {/* Contact Message */}
              <div className="w-full max-w-[230px] xs:max-w-[240px] sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl flex flex-row items-start">
   
   {/* Left section */}
