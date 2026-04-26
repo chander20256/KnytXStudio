@@ -160,12 +160,12 @@ export default function Letters({ isOpen, setIsOpen }) {
               <div className="space-y-2">
                 <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                   <FaEnvelope className="text-green-400" />
-                  <span>contact@knytxstudio.com</span>
+                  <span>chanderprakash3012@gmail.com</span>
                 </div>
 
                 <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                   <FaPhoneAlt className="text-green-400" />
-                  <span>+91 00000 00000</span>
+                  <span>+91 9103649539</span>
                 </div>
 
                 <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
