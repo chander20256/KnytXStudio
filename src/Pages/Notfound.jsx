@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { AlertTriangle, ArrowLeft } from "lucide-react";
 
-export default function NotFound() {
+export default function Notfound() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#080b11] flex items-center justify-center px-4 py-16 sm:px-6 md:px-10">
-      
+    <div className="relative min-h-screen overflow-hidden bg-[#080b11] flex items-center justify-center px-4 sm:px-6 md:px-10 py-16">
+
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-[-120px] left-[-120px] w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] bg-green-500/20 blur-3xl rounded-full animate-pulse" />
 
-        <div className="absolute bottom-[-120px] right-[-80px] w-[240px] h-[240px] sm:w-[350px] sm:h-[350px] bg-emerald-400/10 blur-3xl rounded-full animate-pulse" />
+        <div className="absolute bottom-[-150px] right-[-100px] w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] bg-emerald-400/10 blur-3xl rounded-full animate-pulse" />
       </div>
 
       {/* Grid Overlay */}
@@ -25,7 +25,7 @@ export default function NotFound() {
         transition={{ duration: 0.7 }}
         className="relative z-10 w-full max-w-3xl text-center"
       >
-        
+
         {/* Icon */}
         <motion.div
           animate={{ y: [0, -10, 0] }}
@@ -38,24 +38,24 @@ export default function NotFound() {
         </motion.div>
 
         {/* 404 */}
-        <h1 className="text-[90px] xs:text-[110px] sm:text-8xl md:text-9xl font-black leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-200 mb-4 break-words">
+        <h1 className="text-[80px] xs:text-[100px] sm:text-8xl md:text-9xl font-black leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-200 mb-4">
           404
         </h1>
 
         {/* Heading */}
-        <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-2">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white mb-4 px-2">
           Lost in the Digital Void
         </h2>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm xs:text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-8 sm:mb-10 px-2">
+        <p className="text-gray-400 text-sm sm:text-lg leading-relaxed max-w-xl mx-auto mb-8 sm:mb-10 px-2">
           The page you are trying to access does not exist or may have been
           moved. Let’s get you back to the KnytXStudio experience.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full max-w-md sm:max-w-none mx-auto">
-          
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+
           {/* Home Button */}
           <Link
             to="/"
