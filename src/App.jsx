@@ -10,6 +10,8 @@ import Portfolio from "./Pages/Portfolio";
 import BlogDetail from "./Pages/Blog/BlogDetail";
 import About from "./Pages/About";
 
+import NotFound from "./pages/Notfound";
+
 function App() {
   return (
     <Routes>
@@ -21,7 +23,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
