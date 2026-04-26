@@ -10,7 +10,7 @@ import Portfolio from "./Pages/Portfolio";
 import BlogDetail from "./Pages/Blog/BlogDetail";
 import About from "./Pages/About";
 
-import NotFound from "./Pages/NotFound";
+
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
-      <Route path="*" element={<NotFound />} /> 
+    
     </Routes>
   );
 }
