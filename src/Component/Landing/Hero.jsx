@@ -1,6 +1,4 @@
-
-
-
+ 
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import DotLogo3D from "./DotLogo3D";
