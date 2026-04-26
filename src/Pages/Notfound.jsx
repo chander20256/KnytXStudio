@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { AlertTriangle, ArrowLeft } from "lucide-react";
 
-export default function Notfound() {
+export default function NotFound() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#080b11] flex items-center justify-center px-4 sm:px-6 md:px-10 py-16">
 

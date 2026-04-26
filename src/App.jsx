@@ -10,7 +10,7 @@ import Portfolio from "./Pages/Portfolio";
 import BlogDetail from "./Pages/Blog/BlogDetail";
 import About from "./Pages/About";
 
-import NotFound from "./pages/Notfound";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
