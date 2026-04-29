@@ -11,7 +11,7 @@ export default function Envelope({ isOpen: controlledOpen, setIsOpen: setControl
   return (
     <div className="flex flex-col items-center justify-center md:min-h-screen dark:bg-black transition-colors px-4 sm:px-6 mt-20 md:mt-0">
       <div 
-        className="relative w-full max-w-[300px] xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl aspect-[3/2] cursor-pointer group perspective-1000"
+        className="relative w-[90vw] max-w-[90vw] xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-4xl aspect-[3/2] cursor-pointer group perspective-1000"
         onClick={(e) => {
   e.stopPropagation(); 
   if (!isOpen) setIsOpen(true);

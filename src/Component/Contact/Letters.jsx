@@ -354,7 +354,7 @@ export default function Letters({ isOpen, setIsOpen }) {
   return (
     <div
       onClick={(e) => e.stopPropagation()}
-      className={`absolute inset-x-2 sm:inset-x-4 md:inset-x-6
+      className={`absolute inset-x-1 sm:inset-x-4 md:inset-x-6
       bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800
       rounded-xl shadow-2xl
       p-3 sm:p-4 md:p-5 lg:p-6
@@ -511,35 +511,35 @@ export default function Letters({ isOpen, setIsOpen }) {
   <input
     type="text"
     placeholder="Full Name"
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* EMAIL */}
   <input
     type="email"
     placeholder="Email Address"
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* PHONE */}
   <input
     type="text"
     placeholder="Phone Number"
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* WEBSITE */}
   <input
     type="text"
     placeholder="Website / Social Link"
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* SERVICE */}
   <select
     value={service}
     onChange={(e) => setService(e.target.value)}
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all duration-300 text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all duration-300 text-sm"
   >
 
     <option
@@ -565,7 +565,7 @@ export default function Letters({ isOpen, setIsOpen }) {
   <select
     value={businessSize}
     onChange={(e) => setBusinessSize(e.target.value)}
-    className="col-span-2 sm:col-span-1 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all duration-300 text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-black dark:text-white outline-none focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all duration-300 text-sm"
   >
 
     <option
@@ -602,14 +602,14 @@ export default function Letters({ isOpen, setIsOpen }) {
   <input
     type="text"
     placeholder="Your Offered Price"
-    className="col-span-2 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* CLIENT TIMELINE */}
   <input
     type="text"
     placeholder="Preferred Timeline"
-    className="col-span-2 w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
+    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 text-black dark:text-white outline-none text-sm"
   />
 
   {/* MESSAGE */}
