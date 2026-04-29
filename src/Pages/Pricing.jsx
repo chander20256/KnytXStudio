@@ -2,6 +2,9 @@ import React from "react";
 
 import PricingHero from "../Component/Pricing/PricingHero";
 import PricingCards from "../Component/Pricing/PricingCards";
+// import PricingFeatures from "../Component/Pricing/PricingCTA";
+import PricingCTA from "../Component/Pricing/PricingCTA";
+import PricingFAQ from "../Component/Pricing/PricingFAQ";
 
 
 export default function Pricing() {
@@ -12,11 +15,11 @@ export default function Pricing() {
 
       <PricingCards />
 
-      {/* <PricingFeatures />
+      {/* <PricingFeatures /> */}
 
       <PricingFAQ />
 
-      <PricingCTA /> */}
+      <PricingCTA />
 
     </main>
   );
