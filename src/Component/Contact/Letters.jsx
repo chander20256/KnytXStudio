@@ -459,7 +459,7 @@ export default function Letters({ isOpen, setIsOpen }) {
                   <FaClock className="text-green-400" />
 
                   <span>
-                    Response within 24 hours
+                    Response within 24+ hours
                   </span>
 
                 </div>
