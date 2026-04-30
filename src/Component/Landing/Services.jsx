@@ -645,27 +645,27 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-white dark:bg-[#030304] py-16 sm:py-20 lg:py-28 transition-colors"
+      className="relative overflow-hidden bg-white dark:bg-[#030304] py-16 sm:py-20 lg:py-28 transition-colors w-full"
     >
 
       {/* GRID BACKGROUND */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.03] w-full h-full"
         style={{
           backgroundSize: "50px 50px",
           backgroundImage: `
             linear-gradient(to right, rgba(34,197,94,0.08) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(34,197,94,0.08) 1px, transparent 1px)
           `,
-          maskImage:
-            "radial-gradient(circle at center, black 40%, transparent 100%)",
+          maskImage: "radial-gradient(circle at center, black 40%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(circle at center, black 40%, transparent 100%)",
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
 
         {/* HERO HEADER */}
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-14 items-start">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-14 items-start w-full max-w-[1400px] mx-auto">
 
           {/* LEFT CONTENT - Always visible on all screens */}
           <motion.div
@@ -673,7 +673,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="w-full lg:max-w-4xl"
+            className="w-full"
           >
 
             {/* BADGE */}
@@ -1034,7 +1034,7 @@ export default function Services() {
         </div>
 
         {/* SERVICES GRID */}
-        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
+        <div className="mt-16 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 w-full max-w-[1400px] mx-auto">
 
           {services.map((service, i) => (
 
