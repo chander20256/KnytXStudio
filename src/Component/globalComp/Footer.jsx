@@ -171,12 +171,24 @@ export default function Footer() {
                   Email
                 </p>
 
-                <a
-                  href="mailto:hello@knytxstudio.com"
-                  className={footerLink}
-                >
-                  hello@knytxstudio.com
-                </a>
+                <div className="space-y-1">
+                  <div>
+                    <a
+                      href="mailto:contact@knytxstudio.com"
+                      className={footerLink}
+                    >
+                      contact@knytxstudio.com
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="mailto:support@knytxstudio.com"
+                      className={footerLink}
+                    >
+                      support@knytxstudio.com
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div>
