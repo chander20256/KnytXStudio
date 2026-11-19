@@ -95,7 +95,7 @@
 //               <div className="space-y-2">
 //                 <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
 //                   <FaEnvelope className="text-green-400" />
-//                   <span>chanderprakash3012@gmail.com</span>
+//                   <span>contact@knytxstudio.com</span>
 //                 </div>
 
 //                 <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
@@ -426,11 +426,27 @@ export default function Letters({ isOpen, setIsOpen }) {
 
                 <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
 
-                  <FaEnvelope className="text-green-400" />
+                  <FaEnvelope className="text-green-400 flex-shrink-0" />
 
-                  <span>
-                    chanderprakash3012@gmail.com
-                  </span>
+                  <a
+                    href="mailto:contact@knytxstudio.com"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition-colors"
+                  >
+                    contact@knytxstudio.com
+                  </a>
+
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+
+                  <FaEnvelope className="text-green-400 flex-shrink-0" />
+
+                  <a
+                    href="mailto:support@knytxstudio.com"
+                    className="hover:text-green-500 dark:hover:text-green-400 transition-colors"
+                  >
+                    support@knytxstudio.com
+                  </a>
 
                 </div>
 
