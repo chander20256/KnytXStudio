@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://knytxstudio.com
+
+# Sitemap
+Sitemap: https://knytxstudio.com/sitemap.xml
+
