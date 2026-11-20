@@ -21,10 +21,15 @@ const staticPages = [
     priority: '0.9',
     changefreq: 'weekly',
   },
+  // {
+  //   path: '/portfolio',
+  //   priority: '0.9',
+  //   changefreq: 'weekly',
+  // },
   {
-    path: '/portfolio',
-    priority: '0.9',
-    changefreq: 'weekly',
+    path: '/careers',
+    priority: '0.8',
+    changefreq: 'monthly',
   },
   {
     path: '/pricing',
