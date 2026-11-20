@@ -12,6 +12,7 @@ import Blog from "./Pages/Blog/Blog";
 import BlogDetail from "./Pages/Blog/BlogDetail";
 
 import Pricing from "./Pages/Pricing";
+import Careers from "./Pages/Careers";
 
 function App() {
   return (
@@ -42,6 +43,11 @@ function App() {
         <Route
           path="/portfolio"
           element={<Portfolio />}
+        />
+
+        <Route
+          path="/careers"
+          element={<Careers />}
         />
 
         <Route
