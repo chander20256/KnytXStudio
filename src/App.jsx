@@ -12,7 +12,7 @@ import Blog from "./Pages/Blog/Blog";
 import BlogDetail from "./Pages/Blog/BlogDetail";
 
 import Pricing from "./Pages/Pricing";
-import Careers from "./Pages/Careers";
+import Internships from "./Pages/Internships";
 
 function App() {
   return (
@@ -46,8 +46,13 @@ function App() {
         />
 
         <Route
+          path="/internships"
+          element={<Internships />}
+        />
+
+        <Route
           path="/careers"
-          element={<Careers />}
+          element={<Internships />}
         />
 
         <Route
