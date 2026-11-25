@@ -27,9 +27,9 @@ const staticPages = [
   //   changefreq: 'weekly',
   // },
   {
-    path: '/careers',
-    priority: '0.8',
-    changefreq: 'monthly',
+    path: '/internships',
+    priority: '0.9',
+    changefreq: 'weekly',
   },
   {
     path: '/pricing',
