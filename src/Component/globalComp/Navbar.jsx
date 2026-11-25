@@ -205,8 +205,8 @@ export default function Navbar() {
               Portfolio
             </NavLink> */}
 
-            <NavLink to="/careers" className={navLink}>
-              Careers
+            <NavLink to="/internships" className={navLink}>
+              Internships
             </NavLink>
 
             <NavLink to="/about" className={navLink}>
@@ -305,11 +305,11 @@ export default function Navbar() {
             </NavLink> */}
 
             <NavLink
-              to="/careers"
+              to="/internships"
               onClick={() => setOpen(false)}
               className={`${navLink} py-2`}
             >
-              Careers
+              Internships
             </NavLink>
 
             <NavLink
