@@ -33,6 +33,14 @@ export default function Hero() {
 
           {/* LEFT CONTENT */}
           <div className="order-2 text-center lg:order-1 lg:text-left">
+            <Link
+              to="/internships"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/25 hover:bg-green-500/20 transition-all mb-4"
+            >
+              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span>Student Internship Program 2026 • Apply Now →</span>
+            </Link>
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold tracking-tight text-black dark:text-white">
               Knyt<span className="text-green-400">X</span>Studio
             </h1>
@@ -63,15 +71,14 @@ export default function Hero() {
               </button>
 
               <Link
-                to="/portfolio"
+                to="/internships"
                 className="px-6 py-3 rounded-xl font-semibold border
-                           border-black text-black
-                           dark:border-white dark:text-white
-                           transition-all duration-300
-                           hover:bg-black hover:text-white
-                           dark:hover:bg-white dark:hover:text-black"
+                           border-green-500 text-green-600 dark:text-green-400
+                           bg-green-500/10 hover:bg-green-500 hover:text-black
+                           dark:hover:bg-green-400 dark:hover:text-black
+                           transition-all duration-300"
               >
-                View Portfolio
+                Student Internships
               </Link>
             </div>
           </div>
