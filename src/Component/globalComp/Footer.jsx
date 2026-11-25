@@ -29,7 +29,7 @@ export default function Footer() {
     { name: "Services", path: "/services" },
     { name: "Pricing", path: "/pricing" },
     // { name: "Portfolio", path: "/portfolio" },
-    { name: "Careers", path: "/careers", badge: "Hiring" },
+    { name: "Internships", path: "/internships", badge: "Open" },
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
